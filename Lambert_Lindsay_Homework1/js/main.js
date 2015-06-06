@@ -142,7 +142,12 @@ Do not overlap any other object.
 		ctx.lineWidth = 5;
 		ctx.beginPath();
 		ctx.moveTo(100,200);
-		ctx.quadraticCurveTo(300,25, 450, 200);
+		ctx.quadraticCurveTo(300,25, 465, 200);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(100,200);
+		ctx.bezierCurveTo(125,175, 160, 165, 215, 215);
+		ctx.bezierCurveTo(125,175, 160, 165, 215, 215);
 		ctx.stroke();
 		}
 	}
