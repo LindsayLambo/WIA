@@ -35,7 +35,7 @@ Reminder - set the style first then draw.
 ********************************************/
 window.onload = function(){
 	var theCanvas = document.getElementById("Canvas1");
-	if(theCanvas){
+	if (theCanvas && theCanvas.getContext) {
 		var ctx = theCanvas.getContext("2d");
 		if(ctx){
 			//Draw Rectangle here
@@ -62,9 +62,9 @@ Set the stroke color to black and use a radius of 30px for this circle.
 Reminder - set the style first then draw.
 Use the arc method
 ********************************************/
-window.onload = function(){
+
 	var theCanvas = document.getElementById("Canvas2");
-	if(theCanvas){
+	if (theCanvas && theCanvas.getContext) {
 		var ctx = theCanvas.getContext("2d");
 		if(ctx){
 			//Draw Circle here
@@ -78,7 +78,7 @@ window.onload = function(){
 			ctx.stroke();
 		}
 	}
-}
+
 
 
 
@@ -93,9 +93,9 @@ Begin this shape at (100, 100)
 Height and width and color are up to you.
 
 ********************************************/
-window.onload = function(){
+
 	var theCanvas = document.getElementById("Canvas3");
-	if(theCanvas){
+	if (theCanvas && theCanvas.getContext) {
 		var ctx = theCanvas.getContext("2d");
 		if(ctx){
 			//Draw Star here
@@ -103,7 +103,7 @@ window.onload = function(){
 			ctx.fillStyle= "rgb(92, 196, 92)";
 			ctx.lineWidth = 5;
 			ctx.beginPath();
-			ctx.moveTo(100, 100); 
+			ctx.moveTo(100, 100); //100,10 40,200 190,80 10,80 160,200
 			ctx.lineTo(200, 25); 
 			ctx.lineTo(225, 125); 
 			ctx.lineTo(300, 165);  
@@ -117,7 +117,7 @@ window.onload = function(){
 			ctx.stroke();
 		}
 	}
-}
+
 
 
 /*******************************************
@@ -132,7 +132,21 @@ Do not overlap any other object.
 
 ********************************************/
 
-//Draw Umbrella top here
+	var theCanvas = document.getElementById('Canvas4');
+	if (theCanvas && theCanvas.getContext) {
+	var ctx = theCanvas.getContext("2d");
+	if(ctx){
+		//Draw Umbrella top here
+		ctx.strokeStyle = "rgb(10, 115, 10)";
+		ctx.fillStyle= "rgb(92, 196, 92)";
+		ctx.lineWidth = 5;
+		ctx.beginPath();
+		ctx.moveTo(100,200);
+		ctx.quadraticCurveTo(300,25, 450, 200);
+		ctx.stroke();
+		}
+	}
+
 
 /*******************************************
 PART 5
@@ -142,7 +156,21 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 ********************************************/
 
-//Draw text here
+	var theCanvas = document.getElementById("Canvas5");
+	if (theCanvas && theCanvas.getContext) {
+		var ctx = theCanvas.getContext("2d");
+		if(ctx){
+		//Draw text here
+		var textString = "My Wonderful String of Text";
+		ctx.font = "30pt Helvetica";
+		ctx.strokeStyle = "rgb(10, 115, 10)";
+		ctx.fillStyle= "rgb(92, 196, 92)";
+		ctx.fillText(textString, 100, 100);
+		ctx.strokeText(textString, 100, 100);
+
+		}
+	}
+
 
 /*******************************************
 PART 6
@@ -157,7 +185,14 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 ********************************************/
 
-//Draw images here
+	var theCanvas = document.getElementById("Canvas1");
+	if (theCanvas && theCanvas.getContext) {
+		var ctx = theCanvas.getContext("2d");
+		if(ctx){
+		//Draw images here
+		
+		}
+	}
 
 
 
@@ -172,6 +207,13 @@ You must use at least 3 different methods.
 
 ********************************************/
 
-// Draw scene here
+	var theCanvas = document.getElementById("Canvas7");
+	if (theCanvas && theCanvas.getContext) {
+		var ctx = theCanvas.getContext("2d");
+		if(ctx){
+		// Draw scene here
+		
+		}
+	}
 
 
