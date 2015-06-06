@@ -147,7 +147,9 @@ Do not overlap any other object.
 		ctx.beginPath();
 		ctx.moveTo(100,200);
 		ctx.bezierCurveTo(125,175, 160, 165, 215, 215);
-		ctx.bezierCurveTo(125,175, 160, 165, 215, 215);
+		ctx.stroke();
+		ctx.moveTo(215, 215);
+		ctx.bezierCurveTo(225,175, 260, 165, 300, 200);
 		ctx.stroke();
 		}
 	}
