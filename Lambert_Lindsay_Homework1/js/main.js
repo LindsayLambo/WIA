@@ -146,10 +146,16 @@ Do not overlap any other object.
 		ctx.stroke();
 		ctx.beginPath();
 		ctx.moveTo(100,200);
-		ctx.bezierCurveTo(125,175, 160, 165, 215, 215);
+		ctx.bezierCurveTo(125,175, 165, 170, 215, 215);
 		ctx.stroke();
 		ctx.moveTo(215, 215);
-		ctx.bezierCurveTo(225,175, 260, 165, 300, 200);
+		ctx.bezierCurveTo(225,185, 270, 170, 330, 215);
+		ctx.stroke();
+		ctx.moveTo(330,215);
+		ctx.bezierCurveTo(325,195, 380, 170, 440, 215);
+		ctx.stroke();
+		ctx.moveTo(440,215);
+		ctx.bezierCurveTo(445,175, 465, 197, 460, 200);
 		ctx.stroke();
 		}
 	}
