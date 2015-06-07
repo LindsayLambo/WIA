@@ -198,16 +198,30 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 ********************************************/
 
-	var theCanvas = document.getElementById("Canvas1");
+	var theCanvas = document.getElementById("Canvas6");
 	if (theCanvas && theCanvas.getContext) {
 		var ctx = theCanvas.getContext("2d");
 		if(ctx){
 		//Draw images here
-		
+		var theCanvas = document.getElementById('Canvas1');
+	if (theCanvas && theCanvas.getContext) {
+	var ctx = theCanvas.getContext("2d");
+	if (ctx) {
+			var  sourceImage = document.getElementById("image1c6");
+			
+			
+			ctx.drawImage(sourceImage, 0, 0);
+
+			
+			ctx.drawImage(sourceImage, 150, 150, 40, 30);
+			
+			
+			ctx.drawImage(sourceImage, 85, 40, 195, 40,150, 150, 90, 80 );
+			}
 		}
 	}
 
-
+	}
 
 /*******************************************
 PART 7
