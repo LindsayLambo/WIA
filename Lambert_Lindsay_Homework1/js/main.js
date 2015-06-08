@@ -34,17 +34,18 @@ Set the stroke color to black and the dimension of the stroke are the same as th
 Reminder - set the style first then draw.
 ********************************************/
 window.onload = function(){
-	var theCanvas = document.getElementById("Canvas1");
-	if (theCanvas && theCanvas.getContext) {
-		var ctx = theCanvas.getContext("2d");
-		if(ctx){
-			//Draw Rectangle here
-			ctx.fillStyle = "rgb(41, 74, 143)";
-			ctx.strokeStyle = "#000";
-			ctx.lineWidth = 5;
-			ctx.fillRect(0, 0, 50, 100);
-			ctx.strokeRect(0, 0, 50, 100);
-			
+	if(Modernizr.canvas){
+		var theCanvas = document.getElementById("Canvas1");
+		if (theCanvas && theCanvas.getContext) {
+			var ctx = theCanvas.getContext("2d");
+			if(ctx){
+				//Draw Rectangle here
+				ctx.fillStyle = "rgb(41, 74, 143)";
+				ctx.strokeStyle = "#000";
+				ctx.lineWidth = 5;
+				ctx.fillRect(0, 0, 50, 100);
+				ctx.strokeRect(0, 0, 50, 100);
+			}
 		}
 	}
 }
