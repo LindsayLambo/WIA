@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background: rgba(150, 47, 96, 1);	
+	color: rgba(64, 3, 32, 1);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height: 1.1em;
+	padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p, header {
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
